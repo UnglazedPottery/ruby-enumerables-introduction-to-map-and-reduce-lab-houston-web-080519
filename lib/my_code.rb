@@ -43,6 +43,14 @@ def reduce_to_total(source_array, starting_point)
 end
 
 def reduce_to_all_true(source_array)
+   i = 0 
+  while i < source_array.length do 
+    if (passengers_sounds[i] == "coughing" || passengers_sounds[i] == "sneezing")
+      return true
+    end
+    i += 1
+  end
+  return false
 end
 
 def map_to_any_true(source_array)
